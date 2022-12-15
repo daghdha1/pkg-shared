@@ -1,0 +1,38 @@
+{
+  "name": "mysql-nest-provider",
+  "version": "1.0.0",
+  "description": "Mysql connector for NestJs",
+  "author": "Adrian",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daghdha1/mysql-nest-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daghdha1/mysql-nest-provider/issues"
+  },
+  "homepage": "https://github.com/daghdha1/mysql-nest-provider#readme",
+  "dependencies": {
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
