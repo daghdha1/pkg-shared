@@ -1,5 +1,5 @@
 {
-  "name": "mysql-nest-provider",
+  "name": "@daghdha1/mysql-nest-provider",
   "version": "1.0.0",
   "description": "Mysql connector for NestJs",
   "author": "Adrian",
@@ -15,6 +15,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix",
     "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
