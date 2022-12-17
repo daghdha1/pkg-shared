@@ -1,7 +1,7 @@
 {
-  "name": "@daghdha1/mysql-nest-provider",
+  "name": "@daghdha1/shared",
   "version": "1.0.0",
-  "description": "Mysql connector for NestJs",
+  "description": "Shared utils for NestJs",
   "author": "Adrian",
   "license": "ISC",
   "main": "lib/index.js",
@@ -13,8 +13,7 @@
   "scripts": {
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix",
-    "prepublishOnly": "npm run build"
+    "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
   },
   "dependencies": {
     "knex": "^2.3.0",
