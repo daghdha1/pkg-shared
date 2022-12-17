@@ -16,17 +16,6 @@
     "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix",
     "prepublishOnly": "npm run build"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daghdha1/mysql-nest-provider.git"
-  },
-  "bugs": {
-    "url": "https://github.com/daghdha1/mysql-nest-provider/issues"
-  },
-  "homepage": "https://github.com/daghdha1/mysql-nest-provider#readme",
   "dependencies": {
     "knex": "^2.3.0",
     "mysql2": "^2.3.3"
