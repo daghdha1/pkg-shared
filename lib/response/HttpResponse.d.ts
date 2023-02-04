@@ -1,15 +1,6 @@
-export abstract class BaseHttpResponse {
- protected success(data: any, params?: {messages?: string | string[]}): HttpResponse {
-  const response: HttpResponse = {
-   data: data ? data : {},
-  };
-  if (params?.messages) {
-   response.messages = Array.isArray(params.messages) ? params.messages : [params.messages];
-  }
-  return response;
- }
-}
-
+/**
+ * Based on https://jsonapi.org/
+ */
 export type HttpResponse<T = any> = {
     /**
      * Response data
@@ -26,10 +17,11 @@ export type HttpResponse<T = any> = {
     /**
      * Extra data we may need
      */
-    meta?: { [key: string]: any };
-  };
-  
-  export type HttpResponseError = {
+    meta?: {
+        [key: string]: any;
+    };
+};
+export type HttpResponseError = {
     /**
      * A unique identifier for this particular occurrence of the problem.
      */
@@ -54,4 +46,4 @@ export type HttpResponse<T = any> = {
      * Error stack trace as array of strings.
      */
     trace?: string[];
-  };
+};
