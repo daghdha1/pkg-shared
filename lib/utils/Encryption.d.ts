@@ -1,0 +1,9 @@
+/// <reference types="node" />
+export declare const hashStr: (str: string) => Promise<string>;
+export declare const compareStrWithStrHashed: (str: string, strHashed: string) => Promise<boolean>;
+export declare const encryptStr: (strTarget: string, hash: string) => string;
+export declare const decryptStr: (strTarget: string, hash: string) => string;
+export declare const generateRandomBytes: (lenght: number) => Buffer;
+export declare const generateRandomUtf8: (length: number) => string;
+export declare const generateRandomHex: (length: number) => string;
+export declare const stretchStr: (str: string, outputLength: number, customSalt?: Buffer, algorithm?: string) => Buffer;
