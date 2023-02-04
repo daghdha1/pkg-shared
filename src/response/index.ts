@@ -1,2 +1,2 @@
 export * from "./BaseHttp.response";
-export * from "./HttpResponse.d";
+export * from "./HttpResponse";
