@@ -23,6 +23,7 @@
   "url": "git+https://github.com/daghdha1/shared.git"
  },
  "dependencies": {
+  "@daghdha1/shared": "github:daghdha1/shared#master",
   "bcrypt": "^5.1.0",
   "crypto": "^1.0.1",
   "kafkajs": "^2.2.3",
@@ -32,12 +33,12 @@
   "redis": "^4.6.4"
  },
  "devDependencies": {
+  "@types/bcrypt": "^5.0.0",
   "@typescript-eslint/eslint-plugin": "^5.50.0",
   "@typescript-eslint/parser": "^5.50.0",
   "eslint": "^8.33.0",
   "eslint-config-prettier": "^8.6.0",
   "eslint-plugin-prettier": "^4.2.1",
-  "@types/bcrypt": "^5.0.0",
   "prettier": "^2.8.3"
  }
 }
