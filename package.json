@@ -1,7 +1,7 @@
 {
- "name": "@daghdha1/shared",
+ "name": "pkg-shared",
  "version": "1.0.0",
- "description": "Shared utils for NestJs",
+ "description": "Custom shared utils for NestJS projects",
  "author": "Adrian",
  "license": "MIT",
  "main": "lib/index.js",
@@ -16,7 +16,6 @@
   "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
  },
  "dependencies": {
-  "@daghdha1/shared": "github:daghdha1/shared#master",
   "bcrypt": "^5.1.0",
   "crypto": "^1.0.1",
   "kafkajs": "^2.2.3",
