@@ -1,4 +1,6 @@
-# Packages
+# Shared Package
+
+#### shared utils
 
 ### - mysql-custom-provider
 Mysql custom connector for NestJs
