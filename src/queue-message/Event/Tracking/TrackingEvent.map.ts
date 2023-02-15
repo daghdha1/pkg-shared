@@ -1,6 +1,6 @@
-import { TrackingParcellabHookGenericEvent, TrackingParcellabHookEnqueueEvent } from '.';
+import {TrackCreatedEvent, TrackEnqueueEvent} from ".";
 
 export const TrackingEventMap = {
-    TrackingParcellabHookGenericEvent: TrackingParcellabHookGenericEvent,
-    TrackingParcellabHookEnqueueEvent: TrackingParcellabHookEnqueueEvent,
+ TrackCreatedEvent: TrackCreatedEvent,
+ TrackEnqueueEvent: TrackEnqueueEvent,
 };
