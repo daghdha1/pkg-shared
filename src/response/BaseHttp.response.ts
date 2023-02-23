@@ -1,4 +1,4 @@
-import { HttpResponse } from "./HttpResponse";
+import {HttpResponse} from "./HttpResponse.response";
 
 export abstract class BaseHttpResponse {
  protected success(data: any, params?: {messages?: string | string[]}): HttpResponse {
