@@ -1,4 +1,4 @@
-export const appConstants = {
+export const AppConstants = {
  appName: "tracking-lab",
 };
 
