@@ -1,4 +1,4 @@
-import {BaseException} from "../exception";
+import {BaseException} from "../../exception";
 
 export class InvalidPayloadException extends BaseException {
  constructor(className: string) {
