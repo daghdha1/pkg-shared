@@ -1,7 +1,7 @@
 export declare const appConstants: {
     appName: string;
 };
-export declare enum Provider {
+export declare const enum Provider {
     MySQL = "MYSQL",
     Knex = "KNEX",
     Mongo = "MONGO",
