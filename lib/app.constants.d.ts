@@ -1,4 +1,4 @@
-export declare const appConstants: {
+export declare const AppConstants: {
     appName: string;
 };
 export declare const enum Provider {
