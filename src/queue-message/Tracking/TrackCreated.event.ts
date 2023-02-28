@@ -1,4 +1,4 @@
-import {IsDefined, IsString} from "class-validator";
+import {IsBoolean, IsDefined, IsString} from "class-validator";
 
 export class TrackCreatedEvent {
  @IsDefined()
@@ -22,4 +22,7 @@ export class TrackCreatedEvent {
  @IsDefined()
  @IsString()
  trackingLink: string;
+ @IsDefined()
+ @IsBoolean()
+ isConsumed: boolean;
 }
