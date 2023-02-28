@@ -6,4 +6,5 @@ export declare class TrackCreatedEvent {
     trackingNumber: string;
     language: string;
     trackingLink: string;
+    isConsumed: boolean;
 }
