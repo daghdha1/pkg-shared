@@ -13,11 +13,11 @@ import {KafkaConstants} from "./Kafka.constants";
      client: {
       clientId: KafkaConstants.kafkaProducerId,
       brokers: KafkaConstants.brokers,
-      logLevel: 1,
+      logLevel: KafkaConstants.logLevel,
      },
-     producerOnlyMode: true,
+     producerOnlyMode: KafkaConstants.producerOnlyMode,
      producer: {
-      allowAutoTopicCreation: false,
+      allowAutoTopicCreation: KafkaConstants.allowAutoTopicCreation,
      },
     },
    },
@@ -28,13 +28,13 @@ import {KafkaConstants} from "./Kafka.constants";
      client: {
       clientId: KafkaConstants.kafkaConsumerId,
       brokers: KafkaConstants.brokers,
-      logLevel: 1,
+      logLevel: KafkaConstants.logLevel,
      },
      consumer: {
       groupId: KafkaConstants.kafkaConsumerId,
      },
      subscribe: {
-      fromBeginning: false,
+      fromBeginning: KafkaConstants.fromBeginning,
      },
     },
    },
