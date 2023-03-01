@@ -1,5 +1,5 @@
-import {Module} from "@nestjs/common";
-import {ClientsModule, Transport} from "@nestjs/microservices";
+import {Inject, Module, OnModuleInit} from "@nestjs/common";
+import {ClientKafka, ClientsModule, Transport} from "@nestjs/microservices";
 import {Provider} from "../app.constants";
 import {KafkaConstants} from "./Kafka.constants";
 
@@ -42,4 +42,11 @@ import {KafkaConstants} from "./Kafka.constants";
  ],
  exports: [ClientsModule],
 })
-export class KafkaModule {}
+export class KafkaModule implements OnModuleInit {
+ constructor(@Inject(Provider.KafkaConsumer) private readonly kafkaClient: ClientKafka) {}
+
+ async onModuleInit() {
+  await this.kafkaClient.connect();
+  this.kafkaClient.subscribeToResponseOf("identity.auth.jwt.event");
+ }
+}
