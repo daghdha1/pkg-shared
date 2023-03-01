@@ -1,3 +1,4 @@
+export * from "./kafka-custom-provider";
 export * from "./mongo-custom-provider";
 export * from "./mysql-custom-provider";
 export * from "./redis-custom-provider";

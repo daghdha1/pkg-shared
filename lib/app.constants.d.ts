@@ -6,5 +6,6 @@ export declare const enum Provider {
     Knex = "KNEX",
     Mongo = "MONGO",
     Redis = "REDIS",
-    Kafka = "KAFKA"
+    KafkaProducer = "KAFKA_PRODUCER",
+    KafkaConsumer = "KAFKA_CONSUMER"
 }

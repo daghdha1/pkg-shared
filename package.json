@@ -16,15 +16,16 @@
   "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
  },
  "dependencies": {
+  "@nestjs/microservices": "^9.3.9",
   "bcrypt": "^5.1.0",
   "class-transformer": "^0.5.1",
   "class-validator": "^0.14.0",
   "crypto": "^1.0.1",
-  "kafkajs": "^2.2.3",
   "knex": "^2.4.2",
   "mongodb": "^5.0.1",
   "mysql2": "^3.1.2",
-  "redis": "^4.6.4"
+  "redis": "^4.6.4",
+  "rxjs": "^7.8.0"
  },
  "devDependencies": {
   "@types/bcrypt": "^5.0.0",
