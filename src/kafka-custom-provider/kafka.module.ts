@@ -1,6 +1,7 @@
 import {Module} from "@nestjs/common";
 import {ClientsModule, Transport} from "@nestjs/microservices";
 import {Provider} from "../app.constants";
+import {KafkaConstants} from "./Kafka.constants";
 
 @Module({
  imports: [
@@ -10,8 +11,8 @@ import {Provider} from "../app.constants";
     transport: Transport.KAFKA,
     options: {
      client: {
-      clientId: "tl-producer",
-      brokers: ["localhost:9094"],
+      clientId: KafkaConstants.kafkaProducerId,
+      brokers: KafkaConstants.brokers,
       logLevel: 1,
      },
      producerOnlyMode: true,
@@ -25,12 +26,12 @@ import {Provider} from "../app.constants";
     transport: Transport.KAFKA,
     options: {
      client: {
-      clientId: "tl-consumer",
-      brokers: ["localhost:9094"],
+      clientId: KafkaConstants.kafkaConsumerId,
+      brokers: KafkaConstants.brokers,
       logLevel: 1,
      },
      consumer: {
-      groupId: "tl-consumer",
+      groupId: KafkaConstants.kafkaConsumerId,
      },
      subscribe: {
       fromBeginning: false,
