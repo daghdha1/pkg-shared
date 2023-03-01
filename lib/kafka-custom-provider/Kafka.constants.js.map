@@ -1,1 +1,1 @@
-{"version":3,"file":"Kafka.constants.js","sourceRoot":"","sources":["../../src/kafka-custom-provider/Kafka.constants.ts"],"names":[],"mappings":";;;AAAa,QAAA,cAAc,GAAG,EAAE,CAAC"}
+{"version":3,"file":"Kafka.constants.js","sourceRoot":"","sources":["../../src/kafka-custom-provider/Kafka.constants.ts"],"names":[],"mappings":";;;AAAa,QAAA,cAAc,GAAG;IAC7B,eAAe,EAAE,aAAa;IAC9B,eAAe,EAAE,aAAa;IAC9B,OAAO,EAAE,CAAC,gBAAgB,CAAC;CAC3B,CAAC"}
