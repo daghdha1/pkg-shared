@@ -10,7 +10,7 @@ export const RedisProvider = () => {
   pool.on('ready', () => {
     console.log(
       '\x1b[32m%s\x1b[0m',
-      `Connection pool REDIS_POOL (Redis) created`
+      `Connection pool REDIS (Redis) created`
     );
   });
   pool.on('error', (err) => {

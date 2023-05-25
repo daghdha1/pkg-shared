@@ -1,6 +1,6 @@
 import {IsDefined, IsString} from "class-validator";
 
-export class TrackEnqueueEvent {
+export class TrackingStatusEnqueueEvent {
  @IsDefined()
  @IsString()
  event: string;
